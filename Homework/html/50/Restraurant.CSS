@@ -1,0 +1,22 @@
+img {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+header {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: brown;
+    font-size: 30px;
+
+}
+
+p {
+    font-size: 2em;
+}
