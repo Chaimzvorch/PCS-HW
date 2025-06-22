@@ -1,0 +1,11 @@
+p{
+    color:  purple;
+}
+
+header{
+    text-align: center;
+    }
+    h1{
+        /*font-size: 36px;*/
+        font-size: 2em;
+    }

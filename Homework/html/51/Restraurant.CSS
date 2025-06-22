@@ -9,7 +9,8 @@ img {
 
 header {
     text-align: center;
-    text-decoration: wavy;
+    text-decoration: wavy,dashed,gray;
+    border: 10px, darkblue, double;
 }
 
 h3 {

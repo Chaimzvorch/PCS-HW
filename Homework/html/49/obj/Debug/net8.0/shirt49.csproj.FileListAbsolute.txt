@@ -1,0 +1,15 @@
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\bin\Debug\net8.0\shirt49.exe
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\bin\Debug\net8.0\shirt49.deps.json
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\bin\Debug\net8.0\shirt49.runtimeconfig.json
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\bin\Debug\net8.0\shirt49.dll
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\bin\Debug\net8.0\shirt49.pdb
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.AssemblyInfoInputs.cache
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.AssemblyInfo.cs
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.sourcelink.json
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.dll
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\refint\shirt49.dll
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.pdb
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\shirt49.genruntimeconfig.cache
+C:\xampp\htdocs\class\html\Homework\49\ColorShirt\shirt49\obj\Debug\net8.0\ref\shirt49.dll
