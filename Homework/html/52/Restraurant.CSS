@@ -1,0 +1,45 @@
+html{
+    background-color: rgba(110, 123, 182, 0.247);
+    
+}
+body{
+    background-color: orange;
+    max-width: 900px  ;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+    
+   header {
+    text-align: center;
+    
+    border: 10px, darkblue, double;
+    padding-bottom:  2px;
+}
+
+h3 {
+    text-align: left;
+    color: green;
+
+
+}
+
+p {
+    font-size: 1em;
+    color: gray;
+    margin: auto;
+    font-weight: bold;
+}
+
+a:hover {
+    color: brown;
+}
+nav{
+    text-wrap: nowrap ;
+}

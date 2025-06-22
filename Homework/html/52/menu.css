@@ -1,0 +1,47 @@
+img {
+    height: 250px;
+    width: 250px;
+    padding-top: 3em;
+    border-radius: 150px;
+    box-shadow: 8px 8px 8px 8px yellow, 10px -0px 10px 10px lightblue;
+    margin-bottom: 1px;
+}
+
+
+h3 {
+    text-align: justify;
+    color: red;
+    font-size: 30px;
+    padding-bottom: 16px;
+
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.food-desc {
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 120 px;
+    color: green;
+    vertical-align: middle;
+}
+
+.food-item {
+
+    font-size: 1.5em;
+    border: 8px dashed brown;
+    overflow: auto;
+    margin-top: 20px;
+
+}
+
+.food-item img {
+    float: left;
+    padding: .5em;
+    margin-left: 35px;
+    margin-bottom: 45px;
+
+}
