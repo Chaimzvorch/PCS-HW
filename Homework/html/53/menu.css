@@ -1,0 +1,41 @@
+
+h3 {
+    text-align: justify;
+    color: red;
+    font-size: 30px;
+    padding-bottom: 16px;
+
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.food-desc {
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 120 px;
+    color: green;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+.food-item {
+    padding-left: .5em;
+    font-size: 1.5em;
+    border: 8px dashed brown;
+    overflow: auto;
+    margin-top: 20px;
+
+}
+
+.food-item img {
+    float: left;
+    padding: .5em;
+    margin-left: 35px;
+    margin-bottom: 45px;
+    height: 250px;
+    width: 250px;
+
+}

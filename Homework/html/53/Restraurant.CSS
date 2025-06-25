@@ -1,0 +1,78 @@
+html {
+    background-color: rgba(110, 123, 182, 0.247);
+
+}
+
+body {
+
+    width: 550px;
+    height: 550px;
+
+
+}
+
+.desc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/restraurantpic3.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+
+
+
+img {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    display: inline-block;
+    padding-top: 15px;
+    border-radius: 145px;
+    opacity: .9;
+}
+
+
+header {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    border: 10px, rgb(255, 123, 0), double;
+    padding-bottom: 2px;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: left;
+    color: green;
+    opacity: 1;
+
+
+}
+
+p {
+    font-size: 1em;
+    color: gray;
+    margin: auto;
+    font-weight: bold;
+    opacity: 1;
+}
+
+a:hover {
+    color: brown;
+}
+
+nav {
+    text-wrap: nowrap;
+}
+
+video {
+    width: 250px;
+    margin-left: 250px;
+}
