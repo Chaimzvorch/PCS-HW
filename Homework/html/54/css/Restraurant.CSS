@@ -1,0 +1,89 @@
+html {
+    background-color: rgba(16, 55, 230, 0.247);
+    width: 500px;
+    height: 500px;
+
+}
+
+body {
+    width: 900px;
+    height: 500px;
+    padding-left: 25%;
+    cursor: pointer;
+}
+
+
+
+
+.hours {
+    border: 2px orange solid;
+    font-size: 1em;
+    color: darkblue;
+    padding-left: 15px;
+    font-weight: bold;
+    margin-right: 350px;
+    padding-bottom: 10px
+}
+
+
+
+header {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    border: 10px, rgb(255, 123, 0), double;
+    padding-bottom: 2px;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: left;
+    color: green;
+
+}
+
+
+a:hover {
+    color: brown;
+}
+
+nav {
+    text-wrap: nowrap;
+}
+
+video {
+    width: 250px;
+    margin-left: 250px;
+}
+
+.pic-main {
+    content: "";
+    border: 2px solid blue;
+    background-image: url(../images/restraurantview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 140px;
+    right: 0;
+    width: 800px;
+    height: 625px;
+}
+
+.desc {
+    opacity: 1;
+}
+
+footer {
+    background-color: black;
+    color: wheat;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 600px;
+
+}

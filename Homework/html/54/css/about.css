@@ -1,0 +1,23 @@
+.about {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-style: italic;
+    border: 3px lightpink solid;
+    padding: 5px;
+}
+
+.motto {
+    padding: 6px;
+    font-style: italic;
+    border: 3px lightpink solid;
+
+
+}
+
+h3 {
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+a:hover {
+    color: wheat;
+}

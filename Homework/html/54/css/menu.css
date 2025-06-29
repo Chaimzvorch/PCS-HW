@@ -1,0 +1,53 @@
+h3 {
+    text-align: justify;
+    color: red;
+    font-size: 25px;
+    padding-bottom: 6px;
+
+}
+
+a:hover {
+    color: wheat;
+    text-decoration: underline;
+}
+
+.food-desc {
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 120px;
+    padding-right: 50px;
+    color: rgb(194, 228, 194);
+    vertical-align: middle;
+    opacity: 1;
+    height: 65px;
+     margin-bottom: 0px;
+
+}
+
+.food-item {
+    padding-left: .5em;
+    font-size: 10pxx;
+    border: 6px dashed brown;
+    overflow: auto;
+    margin-bottom: 0px;
+    height: 140px;
+
+
+
+}
+
+.food-item img {
+    float: left;
+
+    margin-left: 35px;
+    margin-bottom: 10px;
+    height: 65px;
+    width: 100px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+
+}
+
+h5 {
+    margin-bottom: 0px;
+}
