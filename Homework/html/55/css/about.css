@@ -1,0 +1,74 @@
+.about {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-style: italic;
+    border: 3px lightpink solid;
+    padding: 5px;
+}
+
+.motto {
+    padding: 6px;
+    font-style: italic;
+    border: 3px lightpink solid;
+
+
+}
+
+h3 {
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+a:hover {
+    color: wheat;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
+th,
+td {
+    border: 3px solid darkblue;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 85%;
+    margin: auto;
+}
+
+td:first-child {
+    text-align: center;
+}
+
+td:not(:first-child) {
+    text-align: right;
+}
+
+td:last-child {
+    text-align: justify;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: blueviolet;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(43, 226, 186);
+}
+
+table tr:hover {
+    background-color: coral;
+    font-size: 1.1em;
+
+}
+
+tfoot {
+    color: beige;
+    background-color: darkmagenta;
+    text-align: justify;
+}
