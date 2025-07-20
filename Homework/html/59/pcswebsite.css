@@ -1,0 +1,153 @@
+html {
+    background-color: white;
+}
+
+body {
+
+    font-family: helvetica, arial, sans-serif;
+    margin-right: 50px;
+
+}
+
+section {
+    padding-left: 100px;
+}
+
+#nav,
+li {
+    color: white;
+    text-decoration: none;
+
+}
+
+ul {
+
+    list-style-type: none;
+
+    background-color: black;
+    height: 50px;
+    padding-top: 25px;
+    margin-bottom: 0;
+
+}
+
+li {
+    display: inline;
+
+    color: white;
+    margin-left: 60px;
+}
+
+
+#nav,
+ul :hover {
+    color: red;
+    text-decoration: underline;
+
+}
+
+span {
+    font-style: italic;
+}
+
+
+header {
+    background-color: gray;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 5px;
+}
+
+#case {
+    text-transform: uppercase;
+}
+
+.pic-desc {
+    text-align: justify;
+    width: 500px;
+}
+
+
+
+caption {
+    caption-side: top;
+}
+
+th,
+td {
+    border: 3px solid black;
+    text-align: right;
+}
+
+td:last-of-type {
+    color: red;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightblue;
+
+}
+
+tbody tr:hover {
+    background-color: blue;
+}
+
+thead {
+    font-size: bold;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 85%;
+    margin: auto;
+    align-self: center;
+
+}
+
+tfoot {
+    text-align: right;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-left: 100px;
+}
+
+#sign-me {
+    text-align: center;
+    background-color: gray;
+    text-align: center;
+
+}
+
+label {
+    display: inline;
+}
+
+button {
+    display: inline-block;
+    box-shadow: 2px 2px 2px 2px black;
+
+    margin: auto;
+    border-radius: 50px;
+
+}
+
+
+input {
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+form {
+
+    height: 75px;
+    border-radius: 5px;
+    padding-top: 50px;
+}
+
+h3 {
+    text-align: center;
+}
