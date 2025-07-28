@@ -1,0 +1,25 @@
+- These are black with white text and take up full screen width.
+- Content in them does not begin all the way on left of screen. Content is centered vertically exactly same as main content.
+
+Main Content
+- Content not full screen - nicely centered (can be fluid, or fixed width (pixels or percentage)). 
+
+Page header
+- Rounded corners on bottom.
+
+Products
+Products are layed out evenly dividing the available space for the 3 products on screens 800px or larger.
+- There are vertical lines BETWEEN the products
+- On smaller screens (< 800px) they each take up full width like other content. Horizontal lines go away.
+- Each product name is centered.
+
+
+
+Sign up
+- On smaller screens (< 1000px) each form part (label + input or button) is on its own line
+
+Financials
+- When page is made very narrow, table doesnt cause entire page to scroll. Instead table scrolls.
+
+
+
