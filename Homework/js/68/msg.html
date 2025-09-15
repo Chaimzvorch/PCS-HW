@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Box Demo</title>
+</head>
+
+<body>
+    <input id="msg" placeholder="Enter your message" />
+    <label><input id="modal" type="checkbox" /> Modal</label>
+    <button id="show">Show</button>
+    <hr />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+    <script src="msgbox.js"></script>
+    <script>
+        const show = document.getElementById('show');
+
+        show.addEventListener('click', () => {
+            const message = document.getElementById('msg').value || 'Default message';
+            const isModal = document.getElementById('modal').checked;
+
+            pcsMessageBox(message, ['Yes', 'No', 'Maybe'], choice => {
+                console.log('You picked ' + choice);
+            });
+        });
+    </script>
+</body>
+
+</html>
