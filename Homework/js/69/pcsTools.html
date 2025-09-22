@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="testBox" style="width:100px; height:100px; background-color:gray;">Hello</div>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="sparkleBtn">Sparkle</button>
+
+    <script src="pcsTools.js"></script>
+
+    <script>
+        const $box = {
+            css: function (prop, value) {
+                if (value !== undefined) {
+                    document.getElementById('testBox').style[prop] = value;
+                } else {
+                    return getComputedStyle(document.getElementById('testBox'))[prop];
+                }
+            }
+        };
+        const box = pcsTools('#testBox');
+
+        document.getElementById('hideBtn').addEventListener('click', () => box.hide());
+        document.getElementById('showBtn').addEventListener('click', () => box.show());
+        document.getElementById('sparkleBtn').addEventListener('click', () => box.sparkle(3000, 500));
+
+    </script>
+</body>
+
+</html>

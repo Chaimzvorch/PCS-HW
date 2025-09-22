@@ -1,0 +1,65 @@
+const pcsTools = function (selector) {
+  'use strict';
+
+  function getElement(selector) {
+    return document.querySelector(selector);
+  }
+
+  function setCss(element, property, value) {
+    element.style[property] = value;
+  }
+
+  function getCss(element, property) {
+    return getComputedStyle(element)[property];
+  }
+
+  function on(element, event, callback) {
+    element.addEventListener(event, callback);
+  }
+
+  const element = getElement(selector);
+
+  return {
+    css: function (property, value) {
+      if (arguments.length === 1) {
+        return getCss(element, property);
+      } else {
+        return setCss(element, property, value);
+      }
+    },
+
+    hide: function () {
+      setCss(element, 'display', 'none');
+    },
+
+    show: function () {
+      setCss(element, 'display', 'inline-block');
+    },
+
+    sparkle: function (durationMs = 3000, intervalMs = 300) {
+      function getRandomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+
+      const sparkleInterval = setInterval(() => {
+        setCss(element, 'background-color', getRandomColor());
+      }, intervalMs);
+
+      setTimeout(() => {
+        clearInterval(sparkleInterval);
+        setCss(element, 'background-color', '');
+      }, durationMs);
+    },
+
+    on: function (event, callback) {
+      on(element, event, callback);
+    },
+
+    click: function (callback) {
+      on(element, 'click', callback);
+    }
+  };
+};
