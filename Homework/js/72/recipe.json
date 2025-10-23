@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Spaghetti",
+    "ingredients": ["Spaghetti noodles", "Tomato sauce", "Ground beef", "Garlic", "Olive oil"],
+    "image": "images/spaghetti.jpg"
+  },
+  {
+    "name": "Pancakes",
+    "ingredients": ["Flour", "Milk", "Eggs", "Baking powder", "Maple syrup"],
+    "image": "images/pancakes.jpg"
+  },
+  {
+    "name": "Salad",
+    "ingredients": ["Lettuce", "Tomatoes", "Cucumbers", "Olive oil", "Feta cheese"],
+    "image": "images/salad.jpg"
+  }
+]

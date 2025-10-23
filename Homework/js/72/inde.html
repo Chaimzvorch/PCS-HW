@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Viewer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="recipe.js" defer></script>
+    <style>
+        #recipe {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        #recipe img {
+            max-width: 300px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        #error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Select a Recipe</h2>
+    <select id="recipeSelect">
+        <option value="">-- Choose a recipe --</option>
+    </select>
+
+    <div id="error"></div>
+    <div id="recipe"></div>
+</body>
+
+</html>
