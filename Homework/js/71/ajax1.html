@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>File Loader</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #spinner {
+            display: none;
+            margin-top: 10px;
+        }
+
+        #messageBox {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            display: none;
+        }
+
+        #content {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Load File from Server</h2>
+    <input type="text" id="filename" placeholder="Enter filename (e.g. data.txt)" />
+    <button id="loadBtn">Load</button>
+
+    <div id="spinner">🔄 Loading...</div>
+    <div id="messageBox"></div>
+    <div id="content"></div>
+    <script src="AJAX.js"></script>
+</body>
+
+</html>
