@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia Map Search</title>
+  <style>
+    /* General Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Layout container */
+    body {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+    }
+
+    /* Sidebar Styling */
+    #sidebar {
+      width: 320px;
+      background: #fff;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+    }
+
+    #sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #0078d7;
+    }
+
+    /* Input and Button */
+    #searchInput {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    #searchInput:focus {
+      border-color: #0078d7;
+      box-shadow: 0 0 4px rgba(0, 120, 215, 0.3);
+    }
+
+    #searchBtn {
+      padding: 10px 14px;
+      font-size: 1rem;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    #searchBtn:hover {
+      background-color: #005fa3;
+    }
+
+    /* Results section */
+    #results {
+      margin-top: 20px;
+      overflow-y: auto;
+      flex-grow: 1;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+
+    #results div {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    #results div:hover {
+      background-color: #f9f9f9;
+    }
+
+    /* Map Styling */
+    #map {
+      flex-grow: 1;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      #sidebar {
+        width: 100%;
+        height: 200px;
+        flex-shrink: 0;
+      }
+
+      #map {
+        height: calc(100% - 200px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sidebar">
+    <h2>Wikipedia Search</h2>
+    <input type="text" id="searchInput" placeholder="Search Wikipedia..." />
+    <button id="searchBtn">Search</button>
+    <div id="results"></div>
+  </div>
+
+  <div id="map"></div>
+
+  <script>
+    (g => {
+      var h, a, k, p = "The Google Maps JavaScript API",
+        c = "google", l = "importLibrary", q = "__ib__",
+        m = document, b = window;
+      b = b[c] || (b[c] = {});
+      var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+        u = () => h || (h = new Promise(async (f, n) => {
+          await (a = m.createElement("script"));
+          e.set("libraries", [...r] + "");
+          for (k in g)
+            e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+          e.set("callback", c + ".maps." + q);
+          a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+          d[q] = f;
+          a.onerror = () => h = n(Error(p + " could not load."));
+          a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+          m.head.append(a)
+        }));
+      d[l] ? console.warn(p + " only loads once. Ignoring:", g) :
+        d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+    })({
+      key: "AIzaSyCetQgMOkfvhXCL7vPSaVKyArDtO2bYXqs",
+      v: "weekly",
+    });
+  </script>
+
+  <script src="map.js"></script>
+</body>
+
+</html>
+
+</html>
