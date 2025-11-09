@@ -17,12 +17,12 @@
     function createAndAttachButton() {
 
         const newButton = document.createElement('button');
-        newButton.textContent = 1;
+        newButton.textContent = ++clicks;
         newButton.style.margin = '5px';
         newButton.style.backgroundColor = 'green';
 
         newButton.addEventListener('click', e => {
-            let current = parseInt(e.target.textContent, 10)
+            let current = parseInt(e.target.textContent, 10);
             e.target.textContent = ++current;
             e.stopPropagation();
         });
@@ -30,10 +30,10 @@
 
     }
     const initialButton = document.getElementById('initialButton');
-    initialButton.style.color = "blue"
+    initialButton.style.color = 'blue';
     initialButton.addEventListener('click', e => {
         createAndAttachButton();
         e.stopPropagation();
     }
-    )
+    );
 }());

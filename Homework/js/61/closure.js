@@ -52,7 +52,9 @@ console.log(getMultiplier(7, 8))
 
 
 function getMultiplier(x) {
-    return multiply(y)
+    return function(y){
+    return x *y;
+}
 }
 
 

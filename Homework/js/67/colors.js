@@ -46,7 +46,7 @@ let isRunning;
       logColorChange(bgColor, textColor);
     }, 1000); // Change every 3 seconds
      isRunning = true;
-    shouldLog = true
+    shouldLog = true;
   }
 
   tableBody.addEventListener("click",()=>{
@@ -56,7 +56,7 @@ let isRunning;
     else startColorCycle();{
 
     }
-  })
+  });
 
   startColorCycle();
 }());

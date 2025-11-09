@@ -1,3 +1,5 @@
+
+'use strict';
 const dayofWeek = (function () {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Shabbos'];
 
@@ -21,9 +23,11 @@ const interestCalculator = (function () {
     return {
         setRate(x) {
             rate = x;
+            return this;
         },
         setYears(y) {
             year = y;
+            return this;
         },
         calculateInterest(principal) {
             return (principal * rate * year) / 100;

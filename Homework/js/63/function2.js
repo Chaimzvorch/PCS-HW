@@ -50,6 +50,6 @@ function logLetter(letter) {
     console.log(`Uppercase letter: ${letter}`);
 }
 
-const letters = ['a,B, C, d,E']
+const letters = ['a', 'B', 'C', 'd', 'E']
 onlyIf(l1, isUpperCase, logLetter)
 

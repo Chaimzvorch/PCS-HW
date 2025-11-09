@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Potato Head</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('images/bkg.jpg');
+            /* 👈 your image file */
+            background-size: cover;
+            /* make it fill the screen */
+            background-repeat: no-repeat;
+            background-position: center;
+            /* center it nicely */
+            background-attachment: fixed;
+            /* keeps it still when scrolling */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+
+
+        #game-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* Potato base area */
+        #potato-base {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            background-image: url('images/potato.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 2px dashed #ccc;
+            /* visualize drop zone */
+        }
+
+        /* Parts panel */
+        #parts-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .part {
+            width: 60px;
+            cursor: grab;
+            transition: all 0.3s ease;
+            /* smooth movement for drag/drop + reset */
+        }
+
+        .placed-part {
+            position: absolute;
+            width: 60px;
+            z-index: 10;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Put Mr. Potato Head Together!</h2>
+    <audio id="bg-music" src="bg-music.mp3" loop preload="auto"></audio>
+    <div id="game-container">
+        <div id="potato-base" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+        <div id="parts-panel">
+            <img src="images/feet.png" class="part" draggable="true" ondragstart="drag(event)">
+            <img src="images/lips.jpg" class="part" draggable="true" ondragstart="drag(event)">
+            <img src="images/hands.png" class="part" draggable="true" ondragstart="drag(event)">
+            <img src="images/hair.jpg" class="part" draggable="true" ondragstart="drag(event)">
+            <img src="images/bow.jpg" class="part" draggable="true" ondragstart="drag(event)">
+            <img src="images/eyes.jpg class="part" draggable="true" ondragstart="drag(event)">
+             <img src="images/nose.jpg class="part" draggable="true" ondragstart="drag(event)">
+        </div>
+    </div>
+
+    <button onclick="resetParts()">Reset</button>
+    <button id="music-toggle" onclick="toggleMusic()">🔊 Mute Music</button>
+
+    <script src="potatoHead.js"></script>
+</body>
+
+</html>
