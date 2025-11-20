@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Balls with Gravity</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div class="controls">
+        <label for="ballColor">Ball Color:</label>
+        <input type="color" id="ballColor" value="#ff0000">
+        <label for="ballSize">Ball Size (Radius):</label>
+        <input type="number" id="ballSize" value="30" min="10" max="100">
+        <button id="addBallButton">Add Ball</button>
+    </div>
+
+    <script src="ball.js">
+    </script>
+
+</body>
+
+</html>
