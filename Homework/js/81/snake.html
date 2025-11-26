@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: beige;
+      }
+
+      #theCanvas {
+        display: block;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hidden background music -->
+    <audio id="gameAudio" src="audio.mp3" preload="auto" loop></audio>
+
+    <canvas id="theCanvas"></canvas>
+
+    <script>
+      // Try to play after user interaction
+      document.addEventListener("click", () => {
+        const audio = document.getElementById("gameAudio");
+        if (audio.paused) audio.play();
+      });
+    </script>
+    <script src="snake.js"></script>
+  </body>
+</html>
